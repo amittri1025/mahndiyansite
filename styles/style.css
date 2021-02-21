@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #333;
+    --light-black: rgb(29, 29, 29);
+    --main-black: rgb(10, 10, 10);
+    --secondary-white: rgb(221, 221, 221);
+    --btn-color: brown;
+
+}
+
+
+body{
+    font-family: Arial;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 25px;
+    margin: 10px 0;
+    
+}
+
+p{
+  font-size: 22px;
+  font-family: Univers;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10px 0;
+
+}
+
+img{
+    width: 100%;
+}
+
+
+/* Navbar Styling */
+.navbar{
+    background-color: var(--main-black);
+    border-radius: 10%;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top:-90px;
+    left: 0;
+}
+
+.navbar .flex{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar .container{
+    padding: 20px 0px;
+    padding-top: 20px;
+}
+
+.navbar img{
+    width: 70%;
+}
+
+.navbar nav{
+    display: none;
+}
+
+.burger{
+   color: var(--secondary-white);
+   font-size: 25px;
+}
+
+
+/* Showcase */
+
+
+.showcase {
+    background-image: url("../img/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+    height: 365px;
+    margin-top: 80px;
+
+}
+.showcase::before{
+    content: '';
+    width: 100%;
+    height:100%;
+    position: absolute;
+    opacity: 0.5;
+    background-color: black;
+    z-index: -1;
+
+}
+
+.showcase .showcase-text{
+
+    color: white;
+    margin: 33px 0;
+}
+
+.showcase-text a{
+    margin-bottom: 30px;
+}
+.strips{
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+    transform: skewY(-6deg);
+    position: relative;
+}
+.strips::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: skewY(10deg);
+}
+
+/* about-us */
+.container .text-heading{
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+.about-us img{
+  clip-path: circle(50%);
+}
+
+
+/* About Us */
+.carousel-container{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+
+#prevBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: .9;
+  cursor: pointer;
+}
+
+#nextBtn{
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  opacity: .9;
+  cursor: pointer;
+}
+
+/* Maps */
+p.light{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p.first+p.light{
+
+  border-bottom: 1px solid grey;
+}
+
+
+
+
+
+
+/* footer */
+.footer{
+  background-color:var(--light-black);
+  height: 500px;
+}
+
+/* forms */
+.showcase-form{
+  color: white;
+}
+.showcase-form .form-control{
+  margin: 15px 0;
+}
+.showcase-form input[type='text'],
+.showcase-form input[type='email']{
+  border:2px solid white;
+  border-radius: 50px;
+  outline: none;
+  height:40px; width: 100%;
+  padding: 3px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+}
+
+
+.social-icons{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons i{
+  display: block;
+  color: white;
+  font-size: 30px;
+  padding: 20px 0;
+  margin: 20px 10px;
+}
+
+/* Copyright */
+.copyrightBox{
+  height: 100px;
+}
+
+p.crB{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(211, 211, 211);
+  margin: -5px;
+  line-height:30px;
+}
+
+p.crB2{
+  color: white;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+
+}
+
+p.crB2::before{
+  position: absolute;
+  content: '';
+  width: 102vw;
+  height: 100%;
+  transform: translateX(-19%);
+  background-color: rgb(27, 27, 27);
+  z-index: -1;
+}
