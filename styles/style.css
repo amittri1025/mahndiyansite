@@ -207,6 +207,7 @@ p.first+p.light{
 
 /* footer */
 .footer{
+  position: relative;
   background-color:var(--light-black);
   height: 500px;
 }
@@ -278,3 +279,4 @@ p.crB2::before{
   background-color: rgb(27, 27, 27);
   z-index: -1;
 }
+
