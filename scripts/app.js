@@ -1,5 +1,16 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
+const menuBurger = document.querySelector('.burger i');
+const navlinks = document.querySelector('.nav-links');
+const newBody = document.querySelector('body');
+
+// Menu
+menuBurger.addEventListener('click', ()=>{
+navlinks.classList.toggle('nav-active');
+newBody.classList.toggle('forTheBody');
+menuBurger.classList.remove("fa+''+fa-bars")
+menuBurger.classList.add("fas+''+fa-times");
+});
 
 
 //Buttons
